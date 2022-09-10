@@ -8,7 +8,7 @@ print("\nEscoja su opcion de juego: ")
 print("\n1. para piedra ")
 print("\n2. para papel ")
 print("\n3. para tijera \n")
-print("-----------------------------------------")
+print("-----------------------------------------\n")
 
 #input
 n=int(input("Ingrese su opcion: "))
@@ -17,22 +17,31 @@ a=random.randint(1,3)
 #processing
 if 1<=n<=3:
     if n==1 and a==1:
-        print ("!Empate!")
+        print("\nUsted: piedra,  Computadora: piedra")
+        print ("\n!Empate!\n")
     elif n==1 and a==2:
-        print("Derrota")
+        print("\nUsted: piedra,  Computadora: papel")
+        print("\nDerrota\n")
     elif n==1 and a==3:
-        print("Victoria")
+        print("\nUsted: piedra,  Computadora: tijera")
+        print("\nVictoria\n")
     elif n==2 and a==1:
-        print("Victoria")
+        print("\nUsted: papel,  Computadora: piedra")
+        print("\nVictoria\n")
     elif n==2 and a==2:
-        print("!Empate!")
+        print("\nUsted: papel,  Computadora: papel")
+        print("\n!Empate!\n")
     elif n==2 and a==3:
-        print("Derrota")
+        print("\nUsted: papel,  Computadora: tijera")
+        print("\nDerrota\n")
     elif n==3 and a==1:
-        print("Derrota")
+        print("\nUsted: tijera,  Computadora: piedra")
+        print("\nDerrota\n")
     elif n==3 and a==2:
-        print("VIctoria")
+        print("\nUsted: tijera,  Computadora: papel")
+        print("\nVictoria\n")
     elif n==1 and a==2:
-        print("!Empate!")
+        print("\nUsted: tijera,  Computadora: tijera")
+        print("\n!Empate!\n")
 else:
-    print("la opcion escogida es incorrecta")
+    print("\nla opcion escogida es incorrecta\n")
